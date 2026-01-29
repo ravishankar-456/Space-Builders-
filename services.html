@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Packages - SPACE BUILDERS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar container">
+            <div class="logo"><a href="index.html">SPACE BUILDERS</a></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services & Packages</a>
+                <a href="projects.html">Projects</a>
+                <a href="project-flow.html">Process Flow</a>
+                <a href="career.html">Careers</a>
+                <a href="help.html">Help</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Construction Packages & Services</h1>
+        
+        <section class="packages-section">
+            <h2>Transparent Turnkey Packages (Fixed Price per Sq. Ft)</h2>
+            <div class="packages-grid">
+                
+                <div class="package-card">
+                    <h3>The Value Package</h3>
+                    <p class="price">₹1899 / Sq. Ft</p>
+                    <ul>
+                        <li>✅ 2D Floor Plans & Elevation</li>
+                        <li>✅ Standard Branded Materials</li>
+                        <li>✅ Basic Electrical & Plumbing Fittings</li>
+                        <li>✅ Weekly Site Manager Visits</li>
+                        <li>❌ Dedicated Full-Time Engineer</li>
+                    </ul>
+                    <a href="#estimate" class="button">Get Estimate</a>
+                </div>
+
+                <div class="package-card popular">
+                    <h3>The Builder's Choice (Popular)</h3>
+                    <p class="price">₹2199 / Sq. Ft</p>
+                    <ul>
+                        <li>✅ 3D Elevation Design Included</li>
+                        <li>✅ Premium Tiles (Up to ₹65/sqft)</li>
+                        <li>✅ **Dedicated Full-Time Engineer**</li>
+                        <li>✅ Daily Project Tracking App Access</li>
+                        <li>✅ SS Staircase Railing</li>
+                    </ul>
+                    <a href="#estimate" class="button">Get Estimate</a>
+                </div>
+
+                <div class="package-card">
+                    <h3>The Elite Package</h3>
+                    <p class="price">₹2899 / Sq. Ft</p>
+                    <ul>
+                        <li>✅ Full Architectural & Vastu Consultation</li>
+                        <li>✅ Luxury Finishes (Marble/Quarts)</li>
+                        <li>✅ Premium Sanitary Ware & CP Fittings</li>
+                        <li>✅ RCC Overhead Tank with Waterproofing</li>
+                        <li>✅ Dedicated Architect Support</li>
+                    </ul>
+                    <a href="#estimate" class="button">Get Estimate</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="service-toggle-section">
+            <h2>Our Core Services (A la Carte or Package Inclusion)</h2>
+
+            <div class="service-toggle-item">
+                <input type="checkbox" id="service1" hidden>
+                <label for="service1" class="service-header">Architectural Design & Planning <span>+</span></label>
+                <div class="service-content">
+                    <p>Service Explanation: We handle concept design, Vastu consultation, 2D working drawings, and 3D visualization to ensure your home is structurally sound and aesthetically perfect.</p>
+                    <p class="price-quoted">Price Quoted: Included in all Packages OR starts at ₹40 / Sq. Ft (Design Only)</p>
+                </div>
+            </div>
+
+            <div class="service-toggle-item">
+                <input type="checkbox" id="service2" hidden>
+                <label for="service2" class="service-header">Structural Engineering & Foundation <span>+</span></label>
+                <div class="service-content">
+                    <p>Service Explanation: Includes soil testing, structural drawing design, and foundation laying using high-grade cement and steel, ensuring longevity and safety.</p>
+                    <p class="price-quoted">Price Quoted: Included in all Packages (Varies based on soil report)</p>
+                </div>
+            </div>
+
+            <div class="service-toggle-item">
+                <input type="checkbox" id="service3" hidden>
+                <label for="service3" class="service-header">Interior Finishing & Detailing <span>+</span></label>
+                <div class="service-content">
+                    <p>Service Explanation: Comprehensive interior solutions including false ceilings, bespoke carpentry, modular kitchen installation, and final painting/polishing.</p>
+                    <p class="price-quoted">Price Quoted: Starts at ₹600 / Sq. Ft (Basic Interiors)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estimate" class="estimate-table">
+            <h2>Get Your Project Estimate</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="location">Preferred Location:</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select City</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bhk">Number of BHK:</label>
+                    <select id="bhk" name="bhk" required>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4+ BHK</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="plot_area">Plot Area (Sq. Ft):</label>
+                    <input type="number" id="plot_area" name="plot_area" placeholder="e.g., 1200" required>
+                </div>
+                <div>
+                    <label for="const_area">Construction Area (Sq. Ft):</label>
+                    <input type="number" id="const_area" name="const_area" placeholder="e.g., 1800" required>
+                </div>
+                <div>
+                    <label for="mail">Email ID:</label>
+                    <input type="email" id="mail" name="mail" placeholder="your@email.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91" required>
+                </div>
+                <button type="submit">Submit for Detailed Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-icon" target="_blank">💬</a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SPACE BUILDERS. All Rights Reserved. | Chennai, India.</p>
+            <p>Contact: +91 98765 43210 | Email: <a href="mailto:info@spacebuilders.in">info@spacebuilders.in</a></p>
+        </div>
+    </footer>
+</body>
+</html>
